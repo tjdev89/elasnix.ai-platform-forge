@@ -14,12 +14,12 @@ export function Hero() {
             AI-Native Engineering for the Enterprise
           </div>
 
-          <h1 className="text-4xl md:text-6xl font-semibold tracking-tight leading-[1.1] animate-fade-up text-foreground" style={{ animationDelay: "0.1s" }}>
+          <h1 className="text-4xl md:text-6xl font-semibold tracking-tight leading-[1.1] animate-fade-up text-gradient" style={{ animationDelay: "0.1s" }}>
             Engineering intelligent
             <br />
             enterprise platforms with
             <br />
-            <span className="text-gradient-primary">AI, cloud & automation.</span>
+            <span className="text-gradient-aurora">AI, cloud & automation.</span>
           </h1>
 
           <p className="mt-7 text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed animate-fade-up" style={{ animationDelay: "0.2s" }}>
