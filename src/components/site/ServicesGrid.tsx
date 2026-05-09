@@ -8,12 +8,12 @@ export function ServicesGrid({ limit }: { limit?: number }) {
       {items.map((s, i) => (
         <div
           key={s.title}
-          className="group relative glass rounded-2xl p-6 border-gradient hover:shadow-elevated transition-all duration-300 hover:-translate-y-1"
+          className="group relative bg-card/60 border border-border/50 rounded-xl p-6 hover:border-primary/40 hover:bg-card/80 transition-all duration-200"
           style={{ animationDelay: `${i * 60}ms` }}
         >
           <div className="flex items-start justify-between mb-5">
-            <div className="w-11 h-11 rounded-xl bg-gradient-primary flex items-center justify-center shadow-glow">
-              <s.icon className="w-5 h-5 text-primary-foreground" />
+            <div className="w-10 h-10 rounded-lg bg-secondary/80 border border-border/50 flex items-center justify-center">
+              <s.icon className="w-5 h-5 text-primary" />
             </div>
             <ArrowUpRight className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
           </div>

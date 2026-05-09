@@ -6,9 +6,9 @@ export function TechStack() {
       {technologies.map((t) => (
         <div
           key={t.name}
-          className="glass rounded-xl p-4 text-center hover:border-primary/40 transition-colors group"
+          className="bg-card/50 border border-border/50 rounded-lg p-4 text-center hover:border-primary/40 hover:bg-card/80 transition-colors"
         >
-          <div className="text-sm font-semibold group-hover:text-gradient-primary">{t.name}</div>
+          <div className="text-sm font-medium text-foreground">{t.name}</div>
           <div className="text-[10px] uppercase tracking-wider text-muted-foreground mt-1 font-mono">{t.category}</div>
         </div>
       ))}
