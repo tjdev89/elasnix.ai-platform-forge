@@ -34,11 +34,20 @@ function Home() {
             { icon: Layers, title: "Cloud-Native", desc: "Kubernetes-first across AWS, Azure, GCP." },
             { icon: Zap, title: "Automated", desc: "GitOps, CI/CD, and AIOps end to end." },
             { icon: ShieldCheck, title: "Secure by Default", desc: "Zero Trust and DevSecOps from day one." },
-          ].map((p) => (
-            <div key={p.title} className="bg-card/60 border border-border/50 rounded-xl p-6">
-              <p.icon className="w-5 h-5 text-primary mb-4" />
-              <h3 className="font-semibold mb-1">{p.title}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">{p.desc}</p>
+          ].map((p, i) => (
+            <div
+              key={p.title}
+              className="group relative bg-card/60 border border-border/50 rounded-xl p-6 card-hover hover:border-primary/40 overflow-hidden"
+              style={{ animationDelay: `${i * 60}ms` }}
+            >
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none bg-gradient-mesh" />
+              <div className="relative">
+                <div className="w-9 h-9 rounded-lg bg-secondary/80 border border-border/60 flex items-center justify-center mb-4 group-hover:border-primary/40 transition-colors">
+                  <p.icon className="w-4 h-4 text-primary" />
+                </div>
+                <h3 className="font-semibold mb-1">{p.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{p.desc}</p>
+              </div>
             </div>
           ))}
         </div>

@@ -14,12 +14,12 @@ export function Hero() {
             AI-Native Engineering for the Enterprise
           </div>
 
-          <h1 className="text-4xl md:text-6xl font-semibold tracking-tight leading-[1.1] animate-fade-up text-foreground" style={{ animationDelay: "0.1s" }}>
+          <h1 className="text-4xl md:text-6xl font-semibold tracking-tight leading-[1.1] animate-fade-up text-gradient" style={{ animationDelay: "0.1s" }}>
             Engineering intelligent
             <br />
             enterprise platforms with
             <br />
-            <span className="text-gradient-primary">AI, cloud & automation.</span>
+            <span className="text-gradient-aurora">AI, cloud & automation.</span>
           </h1>
 
           <p className="mt-7 text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed animate-fade-up" style={{ animationDelay: "0.2s" }}>
@@ -38,15 +38,15 @@ export function Hero() {
             </Button>
           </div>
 
-          <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-px bg-border/40 rounded-xl overflow-hidden border border-border/40 max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.4s" }}>
+          <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-px bg-border/40 rounded-xl overflow-hidden border border-border/40 max-w-3xl mx-auto animate-fade-up shadow-card" style={{ animationDelay: "0.4s" }}>
             {[
               { v: "9+", l: "Practice areas" },
               { v: "100%", l: "Cloud-native" },
               { v: "24/7", l: "SRE-grade ops" },
               { v: "0-trust", l: "Security model" },
             ].map((s) => (
-              <div key={s.l} className="bg-card/60 p-5">
-                <div className="text-2xl font-display font-semibold text-foreground">{s.v}</div>
+              <div key={s.l} className="bg-card/70 p-5 backdrop-blur-sm relative group transition-colors hover:bg-card/90">
+                <div className="text-2xl font-display font-semibold text-gradient">{s.v}</div>
                 <div className="text-xs text-muted-foreground mt-1">{s.l}</div>
               </div>
             ))}
