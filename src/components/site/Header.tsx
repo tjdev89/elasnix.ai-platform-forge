@@ -21,12 +21,12 @@ export function Header() {
         <div className="container mx-auto px-6 h-16 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2 group">
             <div className="relative">
-              <div className="w-8 h-8 rounded-lg bg-gradient-primary flex items-center justify-center">
+              <div className="w-8 h-8 rounded-lg bg-gradient-aurora flex items-center justify-center shadow-glow">
                 <Sparkles className="w-4 h-4 text-primary-foreground" />
               </div>
             </div>
             <span className="font-display font-semibold text-lg tracking-tight">
-              elasnix<span className="text-gradient-primary">.ai</span>
+              elasnix<span className="text-gradient-aurora">.ai</span>
             </span>
           </Link>
 
