@@ -35,10 +35,10 @@ function Home() {
             { icon: Zap, title: "Automated", desc: "GitOps, CI/CD, and AIOps end to end." },
             { icon: ShieldCheck, title: "Secure by Default", desc: "Zero Trust and DevSecOps from day one." },
           ].map((p) => (
-            <div key={p.title} className="glass rounded-2xl p-6">
-              <p.icon className="w-6 h-6 text-primary mb-4" />
+            <div key={p.title} className="bg-card/60 border border-border/50 rounded-xl p-6">
+              <p.icon className="w-5 h-5 text-primary mb-4" />
               <h3 className="font-semibold mb-1">{p.title}</h3>
-              <p className="text-sm text-muted-foreground">{p.desc}</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">{p.desc}</p>
             </div>
           ))}
         </div>

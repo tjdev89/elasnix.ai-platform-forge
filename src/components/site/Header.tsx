@@ -17,11 +17,11 @@ export function Header() {
   const [open, setOpen] = useState(false);
   return (
     <header className="fixed top-0 inset-x-0 z-50">
-      <div className="glass-strong border-b border-border/40">
+      <div className="bg-background/75 backdrop-blur-md border-b border-border/60">
         <div className="container mx-auto px-6 h-16 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2 group">
             <div className="relative">
-              <div className="w-8 h-8 rounded-lg bg-gradient-primary flex items-center justify-center shadow-glow">
+              <div className="w-8 h-8 rounded-lg bg-gradient-primary flex items-center justify-center">
                 <Sparkles className="w-4 h-4 text-primary-foreground" />
               </div>
             </div>
@@ -47,7 +47,7 @@ export function Header() {
             <Button asChild variant="ghost" size="sm">
               <Link to="/contact">Talk to an Expert</Link>
             </Button>
-            <Button asChild size="sm" className="bg-gradient-primary border-0 shadow-glow hover:opacity-90">
+            <Button asChild size="sm" className="bg-gradient-primary border-0 hover:opacity-95">
               <Link to="/contact">Book a Consultation</Link>
             </Button>
           </div>
